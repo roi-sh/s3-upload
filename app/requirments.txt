@@ -1,0 +1,7 @@
+fastapi[all]
+python-magic
+libmagic
+uuid
+boto3
+pathlib
+sqlalchemy

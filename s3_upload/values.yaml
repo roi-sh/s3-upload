@@ -1,0 +1,28 @@
+# Default values for s3_upload.
+replicas: 1
+app_name: s3-upload
+namespace: ""
+
+deployment:
+  labels:
+    type: front-end
+  container:
+    name: s3-upload-pod
+    image: roish1/s3-upload
+    tag: latest
+    port: 80
+
+service:
+  port: 80
+  targetPort: 80
+  nodePort: 32000
+  name: s3-upload-service
+  type: NodePort
+
+configmap:
+  name: s3-upload-config
+  data:
+    AWS_BUCKET: ""
+    AWS_ACCESS_KEY_ID: ""
+    AWS_SECRET_ACCESS_KEY: ""
+    REGION_NAME: ""

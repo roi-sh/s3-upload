@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/navbar.css" media="screen">
+    <link rel="stylesheet" href="static/css/album.css" media="screen">
+    <link rel="stylesheet" href="static/css/message_alert.css">
+    <title>Album</title>
+</head>
+<body>
+  <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a class="exit">S3 web-upload</a>
+  </div>
+  {% if message is defined %}
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Error ! </strong> {{ message }}.
+    </div>
+    {% endif %}
+
+  <div class="album">
+      {% for url in list_of_url %}
+      <div class="gallery">
+          <a target="_blank" href="{{ url }}">
+              <img src="{{ url }}" alt="Image">
+          </a>
+      </div>
+      {% endfor %}
+  </div>
+</body>
+</html>

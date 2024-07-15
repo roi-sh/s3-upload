@@ -1,0 +1,2 @@
+Hello and welcome
+to access the app go to your browser at http://<EC2-Public-IPv4-address>:32000

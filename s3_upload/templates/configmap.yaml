@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configmap.name }}
+  namespace: {{ .Values.namespace | default "default" }}
+data:
+  AWS_BUCKET: {{ .Values.configmap.data.AWS_BUCKET }}
+  AWS_ACCESS_KEY_ID: {{ .Values.configmap.data.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: {{ .Values.configmap.data.AWS_SECRET_ACCESS_KEY }}
+  REGION_NAME: {{ .Values.configmap.data.REGION_NAME }}

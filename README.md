@@ -10,10 +10,12 @@ A Terraform and Kubernetes infrastructure on AWS that build a S3 db and single E
 
 ## General info
 link to my demo video:
+
 [Demo video](https://www.loom.com/share/48a60e4d13ff4b7ba8512c3b064aff65?sid=c8fc274f-1764-4ebc-bb8e-562c0d6e3fc2)
 
+And some  helping drawing of the project little infrastructure:
 
-
+![s3-upload](s3-upload.drawio.png)
 
 ## Technologies
 #### for the app

@@ -1,5 +1,5 @@
 # S3-upload
-A Terraform and Kubernetes infrastructure on AWS that build a S3 db and single EC2 instance and make it single node cluster. Afterwards we install with a custom helm chart and docker image a simple web app that upload image from your local computer to the S3  
+A Terraform and Kubernetes infrastructure on AWS that build a S3 db and single EC2 instance and make it single node cluster, And on top of that it install with a custom helm chart and docker image a simple web app that upload image from your local computer to the S3  
 
 
 ## Table of contents
